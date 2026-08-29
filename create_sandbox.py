@@ -6,7 +6,7 @@ from opensandbox import Sandbox
 async def main() -> None:
     # Create a sandbox with code interpreter
     sandbox = await Sandbox.create(
-        "opensandbox/code-interpreter:v1.1.0",
+        "opensandbox:openclaw",
         entrypoint=["/opt/code-interpreter/code-interpreter.sh"],
         env={"PYTHON_VERSION": "3.11"},
         timeout=timedelta(minutes=10),
