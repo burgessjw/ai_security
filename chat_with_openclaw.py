@@ -21,10 +21,11 @@ async def main() -> None:
             print(url)
             r = httpx.post(
                 url=url,
-                headers={"Authorization": "Bearer my-secret-token"},
+                headers={"Authorization": "Bearer my_token"},
                 json={"model": "openclaw/default",
-                      "messages": [{"role": "user", "content": "hi"}]},
+                      "messages": [{"role": "user", "content": "写一个python脚本，脚本计算2+2的结果，并执行结果告诉我"}]},
                 trust_env=False,
+                timeout=60
             )
             print("== 实际发出的请求 ==")
             print(r.request.method, r.request.url)
@@ -33,6 +34,6 @@ async def main() -> None:
             print("== 响应 ==")
             print(r.status_code)
             print(r.headers.get("server"), r.headers.get("content-type"))
-            print(r.text[:500])
+            print(r.text)
 if __name__ == "__main__":
     asyncio.run(main())
