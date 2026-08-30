@@ -11,5 +11,5 @@
 ||系统调用合理|使用k8s运行时；gVisor|
 
 - 脚本创建沙盒
-- docker exec -d <id> openclaw gateway
+- docker exec -d < container_id > openclaw gateway
 - 脚本与openclaw对话
