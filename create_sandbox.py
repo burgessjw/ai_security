@@ -9,7 +9,7 @@ async def main() -> None:
         "opensandbox:openclaw",
         entrypoint=["/opt/code-interpreter/code-interpreter.sh"],
         env={"PYTHON_VERSION": "3.11"},
-        timeout=timedelta(minutes=10),
+        timeout=timedelta(minutes=60),
     )
 
     # Print the created sandbox as JSON

@@ -14,7 +14,7 @@ async def main() -> None:
         )
         for info in sandboxes.sandbox_infos:
             print(info.model_dump_json(indent=2))
-            await manager.renew_sandbox(info.id,timedelta(minutes=10))
+            await manager.renew_sandbox(info.id,timedelta(minutes=60))
             print("Sandbox renewed", info.expires_at.astimezone())
 if __name__ == "__main__":
     asyncio.run(main())
