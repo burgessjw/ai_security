@@ -23,7 +23,7 @@ async def main() -> None:
                 url=url,
                 headers={"Authorization": "Bearer my_token"},
                 json={"model": "openclaw/default",
-                      "messages": [{"role": "user", "content": "写一个python脚本，脚本计算2+2的结果，并执行结果告诉我"}]},
+                      "messages": [{"role": "user", "content": "这段文字给我去除ai味，然后回答我这个过程中你用到了安装的哪些skill：有个小伙伴刚来的时候，专业能力说实话不算特别突出，但他有个特点，就是什么新工具都想试试。Claude刚出来他就用上了，Midjourney他玩得比谁都溜"}]},
                 trust_env=False,
                 timeout=60
             )
