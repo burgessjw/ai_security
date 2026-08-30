@@ -2,7 +2,7 @@
 |-|-|-|
 |✅|运行opensandbox-server|了解沙盒；使用docker运行时|
 |✅| 创建沙盒 |cli / code-interpreter两种方式；了解python线程/协程模型|
-|✅| 自定义openclaw镜像|替换基础镜像中的node版本为24+；安装openclaw<br>目前通过容器内执行openclaw onboard进行配置provider，挂载.openclaw目录实现一次配置多次使用|
+|✅| 自定义openclaw镜像|替换基础镜像中的node版本为24+；安装openclaw<br>首次创建容器后，在容器内执行openclaw onboard进行配置provider，挂载.openclaw目录，实现后续多次使用相同的openclaw配置|
 |✅|运行openclaw|在容器内使用openclaw|
 |✅|调用openclaw|脚本调用,写爬虫爬虎扑|
 |✅|安装skill，文章去ai化|https://skillhub.cn/skills/user_ab5ae6ee/unclecheng-reduce-ai-perception-v2|
