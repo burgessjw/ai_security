@@ -9,6 +9,7 @@
 ||镜像优化|固化环境变量，openclaw运行参数等到镜像或者脚本；挂载数据卷实现持久化；|
 ||接入微信|公众号接入流程；暴露公网ip；|
 ||系统调用隔离|使用k8s运行时；gVisor|
+||脚本调用改为web入口|react；antDesign；python or go|
 
 - 脚本创建沙盒
 - docker exec -d < container_id > openclaw gateway
