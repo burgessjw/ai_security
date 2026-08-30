@@ -1,3 +1,4 @@
+||||
 |✅|运行opensandbox-server|了解沙盒；了解gVisor；了解k8s|
 |-|-|-|
 |✅| 创建沙盒 |cli / code-interpreter两种方式；了解python线程/协程模型|
