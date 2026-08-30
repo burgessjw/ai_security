@@ -1,6 +1,6 @@
-||||
-|✅|运行opensandbox-server|了解沙盒；了解gVisor；了解k8s|
+|done|||
 |-|-|-|
+|✅|运行opensandbox-server|了解沙盒；了解gVisor；了解k8s|
 |✅| 创建沙盒 |cli / code-interpreter两种方式；了解python线程/协程模型|
 |✅| 自定义openclaw镜像|替换基础镜像中的node版本为24+；安装openclaw|
 |✅|运行openclaw|通过api调用方式实现与openclaw的对话|
